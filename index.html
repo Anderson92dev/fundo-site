@@ -4,53 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagens de fundo</title>
-    
+    <title>Caixas e suas posições</title>
     <style>
-        body{
-            height:100vh;
-           background: black url(imagens/wallpaper003.jpg) center center no-repeat fixed;
-           background-color: black;
+        #caixa1{
+            height: 96vh;
+           
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            background-color: blueviolet;
+            
+            position: relative;
+            padding: 10px;  
         }
 
-        main{
-            max-width: 500px;
-            margin: auto;
+        #caixa2{
+            height: 100px;
+            width: 100px;
+            
+            background-color: aqua;
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+            
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+           
             
         }
-
+        
     </style>
-
 </head>
 <body>
-    <main>
-        <h1>bla bla bla</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
+    <!-- 2 caixas. configurar:
+    1 - tamanho
+    2 - fundo 
+    3 - posição -->
+    <section id="caixa1">
+        <article id="caixa2">
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis voluptates vel quia! Id quo eligendi, aliquid laborum similique, earum, quae neque minima reiciendis tempora assumenda dolore at est cumque!</p>
-    
-    </main>
-
-    
-    
+        </article>
+    </section>
 </body>
 </html>
